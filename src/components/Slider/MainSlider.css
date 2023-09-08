@@ -1,7 +1,7 @@
 .swiper-horizontal
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-  left: 88% ;
+  left: 88%;
   top: 60%;
   transform: translateX(-50%);
   white-space: nowrap;
@@ -14,40 +14,72 @@
 }
 
 .swiper-pagination-bullet {
-    width:  20px;
-    height:  20px;
-    display: inline-block;
-    background: var(--swiper-pagination-bullet-inactive-color, #fff);
-    opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.4);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: var(--swiper-pagination-bullet-inactive-color, #fff);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.4);
 }
-
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
-    transform: scale(1.3);
-    background: radial-gradient(circle, rgba(12,147,7,1) 50%, rgba(0,0,0,0) 40%);
-    border: 1px solid white;
-    margin: 15px !important;
+  transform: scale(1.3);
+  background: radial-gradient(
+    circle,
+    rgba(12, 147, 7, 1) 50%,
+    rgba(0, 0, 0, 0) 40%
+  );
+  border: 1px solid white;
+  margin: 15px !important;
 }
 
-.swiper-button-prev{
-    border: 1px solid red;
-}
-.swiper-button-prev, .swiper-button-next {
-    position: absolute;
-    top: var(--swiper-navigation-top-offset, 90%);
-    width: calc(var(--swiper-navigation-size) / 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--swiper-navigation-color, var(--swiper-theme-color));
-    margin: 0 50px;
+/* Pagination */
+/* common */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  z-index: 999;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  top: 90%;
 }
 
-.swiper-button-next{
-    border: 1px solid red;
+.swiper-button-prev::before,
+.swiper-button-next::after {
+  content: "";
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
+/* Prev Btn */
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-prev {
+  bottom: 0px;
+  left: 700px;
+}
+
+.swiper-button-prev::before {
+  background-image: url("../../assets/prevbtn.png");
+}
+
+/* next btn */
+.swiper-button-next::before {
+  content: "";
+}
+
+.swiper-button-next {
+  bottom: 0px;
+  right: 100px;
+}
+
+.swiper-button-next::after {
+  background-image: url("../../assets/nextbtn.png");
+}
