@@ -8,7 +8,7 @@ const SliderContent = ({ item }) => {
   return (
     <div className="relative">
 
-      <img src={item.img} alt="" className="h-screen w-screen" />
+      <img src={item.img} alt="" className="h-screen w-screen overflow-hidden" />
       
       <h1 className="text-[250px] font-[900] text-white text-opacity-[60%] text-content">
         <span className="text-u absolute">U</span>

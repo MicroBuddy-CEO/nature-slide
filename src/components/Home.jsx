@@ -20,9 +20,9 @@ const Home = () => {
         className="absolute z-[999] top-[32%] left-[6.5%]"
       />
 
-      <div className="absolute z-[999] top-[36%] left-[9.5%]">
-        <h1 className="primaryTitle text-[220px] font-Poppins leading-[200px]">
-          NAT
+      <div className="absolute z-[999] top-[37%] left-[11.1%]">
+        <h1 className="primaryTitle text-[245px] font-Poppins leading-[200px]">
+          N <span className="ml-[-28px]">A</span> <span className="ml-[-44px]">T</span>
         </h1>
         <p className="w-[400px] text-white">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit

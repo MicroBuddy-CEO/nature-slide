@@ -36,15 +36,15 @@
 /* Text Animation */
 .text-content .text-u {
   top: 35%;
-  left: 35%;
+  left: 41%;
 }
 .text-content .text-r {
-  top: 8%;
-  left: 45%;
+  top: 11.5%;
+  left: 52%;
 }
 .text-content .text-e {
-  top: 28%;
-  left: 65%;
+  top: 28.5%;
+  left: 73%;
 }
 
 .swiper-slide-active .text-u {
